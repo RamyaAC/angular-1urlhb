@@ -1,0 +1,35 @@
+<div class='studentForm'>
+	<h3>StudentForm</h3>
+	<!-- <form (ngsumbi)> -->
+	<div style="margin:2px">
+		<label>StudentId:</label>
+		<input  type="text" name ="StudentId" [(ngModel)]="student.StudentId" >
+</div>
+		<div style="margin:2px">
+			<label>Student Name: </label>
+			<input  type="text" name ="StudentName" [(ngModel)]="student.StudentName" >
+</div>
+			<div style="margin:2px">
+				<label>Student Age:</label>
+				<input  type="text" name ="StudentAge" [(ngModel)]="student.StudentAge"  >
+</div>
+				<button style="margin-right:0px" (click) = "saveChanges(Student)">Save</button>
+
+				<!-- </form> -->
+<div class='studentList'>
+  <table>
+					<th>StudentId</th>
+					<th>StudentName</th>
+					<th>StudentAge</th>
+          <th>Action</th>
+          <tr *ngFor = "let stu of studentList" >
+            <td>{{stu.StudentId}}</td>
+            <td>{{stu.StudentName}}</td>
+            <td>{{stu.StudentAge}}</td>
+            <td><button (click)=deleteStudent($event,stu)>delete</button></td>
+          </tr>
+				</table>
+
+</div>
+
+				

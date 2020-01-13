@@ -1,0 +1,16 @@
+.studentForm{
+  text-align: center;
+  padding: 3px;
+  margin: 2px;
+  border: pink solid 2px
+}
+
+.studentList{
+  padding:1px;
+  border: black solid 1px;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
