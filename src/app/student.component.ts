@@ -12,6 +12,7 @@ export class Student {
   styleUrls: ["./student.component.css"]
 })
 export class StudentComponent {
+  
   student = new Student();
   studentList = new Array<Student>();
 
