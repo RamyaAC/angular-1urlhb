@@ -18,7 +18,7 @@ export class StudentComponent {
   constructor() {}
   ngOnInit() {
     
-    this.saveChanges(this.student)
+    // this.saveChanges(this.student)
   }
   saveChanges(student:Student)
   {
